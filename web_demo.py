@@ -141,7 +141,7 @@ def main(args):
 
         print(gr.__version__)
 
-    demo.queue(concurrency_limit=10)
+    demo.queue(concurrency_count=10)
     demo.launch(share=args.share)
 
 
