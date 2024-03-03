@@ -125,8 +125,7 @@ def main(args):
                     with gr.Row():
                         maintenance_notice = gr.Markdown(MAINTENANCE_NOTICE1)
             with gr.Column(scale=5.5):
-                result_text = gr.components.Chatbot(label='Multi-round conversation History', value=[("", "Hi, What do you want to know about this image?")])
-                result_text = result_text.scale(height=550)
+                result_text = gr.components.Chatbot(label='Multi-round conversation History', value=[("", "Hi, What do you want to know about this image?")]).style(height=550)
 
         gr.Markdown(NOTES)
 
