@@ -110,7 +110,7 @@ def main(args):
     with gr.Blocks(css='style.css') as demo:
         gr.Markdown(DESCRIPTION)
         with gr.Row():
-            with gr.Column(scale=4.5):
+            with gr.Column(scale=4):
                 with gr.Group():
                     input_text = gr.Textbox(label='Input Text', placeholder='Please enter text prompt below and press ENTER.')
                     with gr.Row():
@@ -124,7 +124,7 @@ def main(args):
                 with gr.Group():
                     with gr.Row():
                         maintenance_notice = gr.Markdown(MAINTENANCE_NOTICE1)
-            with gr.Column(scale=5.5):
+            with gr.Column(scale=5):
                 result_text = gr.components.Chatbot(label='Multi-round conversation History', value=[("", "Hi, What do you want to know about this image?")])
 #.style(height=550)
 
